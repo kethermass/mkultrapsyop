@@ -1,7 +1,9 @@
-<p><body> {
+.test {
   background-image: url("https://i.postimg.cc/pRh0XNFw/websitebg.png");
   background-repeat: repeat;
   background-size: auto;
+   width:144px;
+  height:129px;
   cursor:url(https://i.postimg.cc/YSnKSLbW/wowcursor.png), auto;
 }
 </p></body>
