@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MKULTRAPSYOP</title>
+    <title>Darion Deatherage</title>
     <link rel="icon" type="image/x-icon" href="/public/favicon.png">
     <style>
         @font-face {
@@ -15,6 +14,8 @@
         body {
             margin: 0;
             font-family: 'Envy Code R', Arial, sans-serif;
+            background-color: #000000;
+            color: #ffffff;
         }
         canvas {
             display: block;
@@ -32,7 +33,6 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            font-family: 'Envy Code R', Arial, sans-serif;
         }
         .top-bar li {
             display: inline-block;
@@ -69,16 +69,15 @@
                 transform: translateY(0);
             }
         }
-    </style>
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.140.2/build/three.module.js",
-                "three/examples/jsm/loaders/GLTFLoader.js": "https://unpkg.com/three@0.140.2/examples/jsm/loaders/GLTFLoader.js",
-                "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.140.2/examples/jsm/controls/OrbitControls.js"
-            }
+        .iframe-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
         }
-    </script>
+       
+    </style>
 </head>
 <body>
     <header>
@@ -89,7 +88,7 @@
                     <a href="#">About</a>
                     <ul class="submenu">
                         <li><a href="bio.html">Bio</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="mailto:kethermass@gmail.com">Contact</a></li>
                     </ul>
                 </li>
                 <li class="menu-item">
@@ -110,9 +109,16 @@
             </ul>
         </nav>
     </header>
-
-    <script type="module" src="./script.js"></script>
-
-
+    <div class="iframe-container">
+        <iframe style="border: 0; width: 350px; height: 753px;" src="https://bandcamp.com/EmbeddedPlayer/album=2997168816/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless>
+            <a href="https://darion.bandcamp.com/album/singles-b-sides">Singles &amp; B-Sides by Darion Deatherage</a>
+        </iframe>
+        <iframe style="border: 0; width: 350px; height: 786px;" src="https://bandcamp.com/EmbeddedPlayer/album=4011172451/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless>
+            <a href="https://darion.bandcamp.com/album/rejected-deep-state-commissions-vol-1">Rejected Deep State Commissions, Vol. 1 by Darion Deatherage</a>
+        </iframe>
+        <iframe style="border: 0; width: 350px; height: 720px;" src="https://bandcamp.com/EmbeddedPlayer/album=384318043/size=large/bgcol=333333/linkcol=ffffff/transparent=true/" seamless>
+            <a href="https://darion.bandcamp.com/album/pulled-under">Pulled Under by Darion Deatherage</a>
+        </iframe>
+    </div>
 </body>
 </html>

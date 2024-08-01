@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHYSICAL ART</title>
+    <title>DIGITAL ART</title>
     <link rel="icon" type="image/x-icon" href="/public/favicon.png">
     <style>
         @font-face {
@@ -103,7 +103,7 @@
             top: 50%;
             transform: translateY(-50%);
             background-color: rgba(0, 0, 0, 0.5);
-            color: white;
+            color: rgb(255, 255, 255);
             border: none;
             padding: 10px;
             font-size: 24px;
@@ -163,7 +163,7 @@
 
         async function loadImages() {
             try {
-                const response = await fetch('images.json');
+                const response = await fetch('digital.json');
                 const images = await response.json();
                 const gallery = document.getElementById('gallery');
                 images.forEach((image, index) => {
