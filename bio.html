@@ -14,6 +14,7 @@
         body {
             margin: 0;
             font-family: 'Envy Code R', Arial, sans-serif;
+            background-color: #000000;
         }
         canvas {
             display: block;
@@ -68,15 +69,20 @@
                 transform: translateY(0);
             }
         }
-    </style>
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.140.2/build/three.module.js",
-                "three/examples/jsm/loaders/GLTFLoader.js": "https://unpkg.com/three@0.140.2/examples/jsm/loaders/GLTFLoader.js",
-                "three/examples/jsm/controls/OrbitControls.js": "https://unpkg.com/three@0.140.2/examples/jsm/controls/OrbitControls.js"
-            }
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            font-size: 24px;
+            z-index: 2;
+            text-align: center;
         }
+    </style>
+   
     </script>
 </head>
 <body>
@@ -110,6 +116,17 @@
         </nav>
     </header>
 
+    <div class="centered-text" id="centered-text">Darion Deatherage is a multimedium artist hailing from Victoria, British Columbia. Much of his school years were spent creating and experiencing art. He continues, today, to create and experience art. <br>Nothing new under the sun.
+        MKULTRAPSYOP.ORG is a self started project created to engorge the masses with a sweet and salty
+        venomous echre. Darion hopes you enjoy.
+
+    </div>
+
     <script type="module" src="./script.js"></script>
+
+
+
+
+    </script>
 </body>
 </html>
