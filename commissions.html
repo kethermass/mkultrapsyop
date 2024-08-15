@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIO</title>
+    <link rel="icon" type="image/x-icon" href="/public/favicon.png">
+    <style>
+        @font-face {
+            font-family: 'Envy Code R';
+            src: url('envycoder.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Envy Code R', Arial, sans-serif;
+            background-color: #000000;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .top-bar {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            padding: 6px;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        .top-bar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            font-family: 'Envy Code R', Arial, sans-serif;
+        }
+        .top-bar li {
+            display: inline-block;
+            position: relative;
+            padding: 10px;
+        }
+        .top-bar a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            display: block;
+        }
+        .menu-item:hover .submenu {
+            display: block;
+            animation: slideDown 0.5s ease-in-out;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            padding: 0;
+        }
+        .submenu li {
+            display: block;
+        }
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .centered-text-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            width: 100%;
+        }
+        .centered-text {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            font-size: 2vw;
+            max-width: 90%;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        @media (max-width: 600px) {
+            .centered-text {
+                font-size: 4vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="top-bar">
+            <ul>
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item">
+                    <a href="#">About</a>
+                    <ul class="submenu">
+                        <li><a href="bio.html">Bio</a></li>
+                        <li><a href= "commissions.html">Commissions</a></li>
+                        <li><a href="mailto:darion@mkultrapsyop.org">Contact</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Art</a>
+                    <ul class="submenu">
+                        <li><a href="digital.html">Digital Art</a></li>
+                        <li><a href="physical.html">Physical Art</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="#">Music</a>
+                    <ul class="submenu">
+                        <li><a href="dariondeatherage.html">Darion Deatherage</a></li>
+                        <li><a href="dogmeat.html">Dogmeat</a></li>
+                    </ul>
+                </li>
+                                </li>
+                <li class="menu-item"><a href="https://linktr.ee/mkultrapsyop">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="centered-text-container">
+        <div class="centered-text" id="centered-text">
+            COMMISSIONS<br>
+            <br>
+            Digital Sketch: $5-10
+            <br>Digital Painting: $40<br>
+            Animated Sprite: $20-40<br>Music Commissions offered on a sliding scale
+            <br>
+            <br>PAYMENTS ACCEPTED IN BTC ETH PAYPAL AND INTERAC ETRANSFER<br>
+        DARION@MKULTRAPSYOP.ORG</div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
